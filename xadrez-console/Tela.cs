@@ -10,7 +10,7 @@ namespace xadrez_console
             {
                 for (int j = 0; j < tab.colunas; j++)
                 {
-                    var impressao = tab.peca(i, j) == null ? "- " : " ";
+                    var impressao = tab.peca(i, j) == null ? "- " : tab.peca(i, j) + " ";
                     System.Console.Write(impressao);
                 }
                 System.Console.WriteLine();
